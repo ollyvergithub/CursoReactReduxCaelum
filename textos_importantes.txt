@@ -1,0 +1,31 @@
+Instrutor Italo
+email: italo.moraes@caelum.com.br
+
+**************** AULA 01 **************** 
+
+Shadow DOM 
+
+O Redux serve para gerenciar estados
+
+Atomic Design
+https://bradfrost.com/blog/post/atomic-web-design/
+
+
+O Paranteses do return é necessario qundo queremos quebrar em varias linhas o codigo
+
+*** Desestruturação de objetos
+const obj = {
+	a:1,
+	b:2
+}
+
+const {a, b} = obj
+
+https://cio.com.br/4-principios-do-chaos-engineering/
+https://pt.shopify.com/
+
+https://github.com/caelum/arquivos-js46
+
+https://eslint.org/
+
+<Fragment><Fragment/> ou <> </>
