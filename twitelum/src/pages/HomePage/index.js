@@ -1,17 +1,20 @@
 import React, {Component, Fragment} from 'react';
-import Cabecalho from './components/Cabecalho'
-import NavMenu from './components/NavMenu'
-import Dashboard from './components/Dashboard'
-import Widget from './components/Widget'
-import TrendsArea from './components/TrendsArea'
-import Tweet from './components/Tweet'
+import Cabecalho from '../../components/Cabecalho'
+import NavMenu from '../../components/NavMenu'
+import Dashboard from '../../components/Dashboard'
+import Widget from '../../components/Widget'
+import TrendsArea from '../../components/TrendsArea'
+import Tweet from '../../components/Tweet'
 
 // Simulando um Helper
 const isButtonDisabel = (novoTweet) => {
     return novoTweet.length > 140 || novoTweet.length === 0
 }
 
-class App extends Component {
+// As chaves {} obriga dar um return
+// Se chamarmos a funcao com (), se tiver setState ficará num Loop infinito
+
+class HomePage extends Component {
     constructor() {
         super()
         this.state = {
@@ -31,6 +34,23 @@ class App extends Component {
                 novoTweet: "",
             })
         }
+
+    }
+
+    mapTweets = () =>{
+
+        const {tweets} = this.state
+
+        if(tweets.length) {
+
+            return tweets.map((tweetInfo, index) => 
+                <Tweet
+                key= {tweetInfo + index}
+                texto  = {tweetInfo}
+            />)
+        }
+
+        return <p>Nenhum Tweet encontrado, crie o seu primeiro Tweet</p>
 
     }
 
@@ -74,7 +94,10 @@ class App extends Component {
                         <Widget>
                             <div className="tweetsArea">
 
-                                {this.state.tweets.length > 0 ? (
+                                {this.mapTweets()}
+
+                                { /*this.state.tweets.length > 0 ? (
+
                                     this.state.tweets.map(
                                         (tweetInfo, index) => {
                                             return (
@@ -85,7 +108,7 @@ class App extends Component {
                                             )
                                         }
                                     )
-                                ) : "Nenhum Tweet encontrado, crie o seu primeiro Tweet"}
+                                ) : "Nenhum Tweet encontrado, crie o seu primeiro Tweet"*/}
 
                             </div>
                         </Widget>
@@ -96,4 +119,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default HomePage;
