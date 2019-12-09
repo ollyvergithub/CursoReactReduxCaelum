@@ -9,6 +9,7 @@ const PrivateRoute = ({component: Component, ...props}) => {
     const isUserAuthenticated = () => Boolean(localStorage.getItem("TOKEN"))
 
     if(isUserAuthenticated()) {
+
         return <Component {...props} />
     }
 

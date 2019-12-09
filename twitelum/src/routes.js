@@ -28,6 +28,7 @@ class PrivateRoute extends React.Component{
 
     render(){
         const {component: Component, ...props} = this.props
+        console.log("Ollyver Routes ", this.props)
 
         if(this.estaAutenticado()){
             return <Component {...props}/>
