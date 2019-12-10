@@ -64,7 +64,9 @@ class LoginPage extends Component {
     onFormFieldChange = ({target}) => {
         const value = target.value;
         const name = target.name;
-        const values = {...this.state.values, [name]: value};this.setState({values}, () => {
+        const values = {...this.state.values, [name]: value};
+
+        this.setState({values}, () => {
             this.formValidations();
         });
 
