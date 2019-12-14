@@ -1,12 +1,14 @@
+import ApiConfig from '../ApiConfig'
+
 const LoginService = {
 
     logar({login, senha}){
-        return fetch("https://twitelum-api.herokuapp.com/login", {
+        return fetch(`${ApiConfig.url}/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(login, senha)
+            body: JSON.stringify({ login, senha })
         }).then(async responseDoServer => {
             if(!responseDoServer.ok){
                 const respostaDeErroDoServidor = await responseDoServer.json()
