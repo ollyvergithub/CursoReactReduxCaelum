@@ -3,6 +3,14 @@ email: italo.moraes@caelum.com.br
 https://github.com/itumoraes/react-com-rotas
 https://github.com/itumoraes/twitelum/releases
 
+https://gs.statcounter.com/
+https://react.christmas/
+
+Props Drilling
+One Way Data Flow
+Single Source of True (Singleton)
+Redux / Mobx
+
 https://github.com/omariosouto/twitelum-api
 Para ativar a API Local, npm i e depois npm start
 
@@ -59,6 +67,10 @@ async e await - LoginPage/index
 **************** AULA 03 **************** 
 
 Hooks, lifeCycles, Prototypes, passando função para o setState
+
+**************** AULA 04 **************** 
+Redux, Duck, Thunk
+- Fiz até a aula 34
 
 
 
