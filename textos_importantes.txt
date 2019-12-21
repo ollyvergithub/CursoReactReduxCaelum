@@ -1,5 +1,19 @@
 Instrutor Italo
 email: italo.moraes@caelum.com.br
+https://github.com/itumoraes/react-com-rotas
+https://github.com/itumoraes/twitelum/releases
+
+https://github.com/omariosouto/twitelum-api
+Para ativar a API Local, npm i e depois npm start
+
+// Só criamos classe quando precisamos manipular estado
+
+Passando uma funcção para o setState
+this.setState((state, props) =>({
+	count: state.count + 1,
+}))
+
+
 
 **************** AULA 01 **************** 
 
@@ -28,4 +42,26 @@ https://github.com/caelum/arquivos-js46
 
 https://eslint.org/
 
+**************** AULA 02 **************** 
+
 <Fragment><Fragment/> ou <> </>
+
+Context - Compartilhamento de informações rápidas
+
+// msg && Quer dizer Se existir msg - faça
+
+Hooks
+
+Refs
+
+async e await - LoginPage/index
+
+**************** AULA 03 **************** 
+
+Hooks, lifeCycles, Prototypes, passando função para o setState
+
+
+
+
+
+
